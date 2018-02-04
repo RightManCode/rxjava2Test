@@ -23,6 +23,7 @@
 
         <activity android:name=".ui.activity.MyTestActivity" />
         <activity android:name=".ui.activity.RxCreateActivity" />
+        <activity android:name=".ui.activity.RxZipActivity" />
     </application>
 
 </manifest>

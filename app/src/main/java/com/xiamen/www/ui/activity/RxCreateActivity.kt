@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_rx_operator_base.*
  * Created by admin on 2018/2/4.
  */
 class RxCreateActivity : RxOperatorBaseActivity() {
-    private val TAG: String = "RxCreateActivity"
+    private val s: String = "RxCreateActivity"
     override fun getSubTitle(): CharSequence? {
         return "create"
     }
@@ -20,20 +20,20 @@ class RxCreateActivity : RxOperatorBaseActivity() {
         Observable.create(ObservableOnSubscribe<Int> {
             //发射器
             rx_operators_text.append("Observable it emit 1" + "\n")
-            Log.e(TAG, "Observable it emit 1" + "\n")
+            Log.e(s, "Observable it emit 1" + "\n")
             it.onNext(1)
 
             rx_operators_text.append("Observable it emit 2" + "\n")
-            Log.e(TAG, "Observable it emit 2" + "\n")
+            Log.e(s, "Observable it emit 2" + "\n")
             it.onNext(2)
 
             rx_operators_text.append("Observable it emit 3" + "\n")
-            Log.e(TAG, "Observable it emit 3" + "\n")
+            Log.e(s, "Observable it emit 3" + "\n")
             it.onNext(3)
             it.onComplete()
 
             rx_operators_text.append("Observable it emit 4" + "\n")
-            Log.e(TAG, "Observable it emit 4" + "\n")
+            Log.e(s, "Observable it emit 4" + "\n")
             it.onNext(4)
         }).subscribe(object : Observer<Int> {
             //接收器
@@ -51,7 +51,7 @@ class RxCreateActivity : RxOperatorBaseActivity() {
 
             override fun onSubscribe(d: Disposable) {
                 rx_operators_text.append("onSubscribe:" + d.isDisposed + "\n")
-                Log.e(TAG, "onSubscribe:" + d.isDisposed + "\n")
+                Log.e(s, "onSubscribe:" + d.isDisposed + "\n")
                 mDisposable = d
             }
 

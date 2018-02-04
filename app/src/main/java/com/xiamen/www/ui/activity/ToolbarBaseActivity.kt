@@ -3,15 +3,14 @@ package com.xiamen.www.ui.activity
 import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.Gravity
+import android.view.View
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import com.xiamen.www.utils.ScreenUtil
 import com.xiamen.www.utils.StatusBarUtl
 import kotlinx.android.synthetic.main.activity_rx_operator_base.*
 import kotlinx.android.synthetic.main.layout_toolbar.*
-import android.view.View
 
 /**
  * Created by admin on 2018/2/4.
@@ -60,7 +59,7 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
         ll_back.setOnClickListener { finish() }
     }
 
-    protected fun isShowBack(): Boolean {
+    open fun isShowBack(): Boolean {
         return true
     }
 

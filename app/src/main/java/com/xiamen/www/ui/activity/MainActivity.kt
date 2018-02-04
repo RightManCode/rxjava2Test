@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         }
         StatusBarUtl.fullScreen(this)
         //初始化titleBar
-//        initToolBar()
         initViewPager()
     }
 
@@ -34,11 +33,5 @@ class MainActivity : AppCompatActivity() {
         mPagerAdapter.addFragment(UseCasesFragment())
         home_viewPager.adapter = mPagerAdapter
         home_tabLayout.setupWithViewPager(home_viewPager)
-    }
-
-
-    private fun initToolBar() {
-        setSupportActionBar(home_toolbar)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(false)
     }
 }

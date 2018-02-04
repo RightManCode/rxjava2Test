@@ -5,6 +5,8 @@ import android.content.Intent
 import com.xiamen.www.R
 import com.xiamen.www.bean.OperatorModel
 import com.xiamen.www.ui.activity.RxCreateActivity
+import com.xiamen.www.ui.activity.RxMapActivity
+import com.xiamen.www.ui.activity.RxZipActivity
 
 import java.util.ArrayList
 
@@ -53,6 +55,9 @@ class OperatorsFragment : CategoryBaseFragment() {
     override fun itemClick(position: Int) {
         when (position) {
             0 -> startActivity(Intent(context, RxCreateActivity::class.java))
+            1 -> startActivity(Intent(context, RxZipActivity::class.java))
+            2 -> startActivity(Intent(context, RxMapActivity::class.java))
+
         }
 //        switch(position) {
 //            case 0:
