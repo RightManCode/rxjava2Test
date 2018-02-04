@@ -27,6 +27,10 @@
         <activity android:name=".ui.activity.RxMapActivity" />
         <activity android:name=".ui.activity.RxFlatMapActivity" />
         <activity android:name=".ui.activity.RxConcatMapActivity" />
+        <activity android:name=".ui.activity.RxDoOnNextActivity" />
+        <activity android:name=".ui.activity.RxFilterActivity" />
+        <activity android:name=".ui.activity.RxSkipActivity" />
+        <activity android:name=".ui.activity.RxTakeActivity" />
     </application>
 
 </manifest>

@@ -57,6 +57,10 @@ class OperatorsFragment : CategoryBaseFragment() {
             2 -> startActivity(Intent(context, RxMapActivity::class.java))
             3 -> startActivity(Intent(context, RxFlatMapActivity::class.java))
             4 -> startActivity(Intent(context, RxConcatMapActivity::class.java))
+            5 -> startActivity(Intent(context, RxDoOnNextActivity::class.java))
+            6 -> startActivity(Intent(context, RxFilterActivity::class.java))
+            7 -> startActivity(Intent(context, RxSkipActivity::class.java))
+            8->startActivity(Intent(context,RxTakeActivity::class.java))
         }
 //        switch(position) {
 //            case 0:
