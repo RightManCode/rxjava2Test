@@ -30,7 +30,10 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
     }
 
     private fun initDoSomething() {
-        rx_operators_btn.setOnClickListener { doSomething() }
+        rx_operators_btn.setOnClickListener {
+            rx_operators_text.append("\n")
+            doSomething()
+        }
     }
 
 

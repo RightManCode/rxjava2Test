@@ -4,9 +4,7 @@ import android.content.Intent
 
 import com.xiamen.www.R
 import com.xiamen.www.bean.OperatorModel
-import com.xiamen.www.ui.activity.RxCreateActivity
-import com.xiamen.www.ui.activity.RxMapActivity
-import com.xiamen.www.ui.activity.RxZipActivity
+import com.xiamen.www.ui.activity.*
 
 import java.util.ArrayList
 
@@ -57,7 +55,8 @@ class OperatorsFragment : CategoryBaseFragment() {
             0 -> startActivity(Intent(context, RxCreateActivity::class.java))
             1 -> startActivity(Intent(context, RxZipActivity::class.java))
             2 -> startActivity(Intent(context, RxMapActivity::class.java))
-
+            3 -> startActivity(Intent(context, RxFlatMapActivity::class.java))
+            4 -> startActivity(Intent(context, RxConcatMapActivity::class.java))
         }
 //        switch(position) {
 //            case 0:

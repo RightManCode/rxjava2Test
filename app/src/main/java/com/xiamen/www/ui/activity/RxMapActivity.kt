@@ -1,15 +1,26 @@
 package com.xiamen.www.ui.activity
 
+import io.reactivex.Observable
+import kotlinx.android.synthetic.main.activity_rx_operator_base.*
+
 /**
  * Created by admin on 2018/2/4.
  */
 class RxMapActivity : RxOperatorBaseActivity() {
 
     override fun getSubTitle(): CharSequence? {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return "map"
     }
 
     override fun doSomething() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Observable.create<Int> {
+            it.onNext(1)
+            it.onNext(2)
+            it.onNext(3)
+        }.map {
+            "this is result:" + it
+        }.subscribe {
+            rx_operators_text.append("accept:" + it + "\n")
+        }
     }
 }

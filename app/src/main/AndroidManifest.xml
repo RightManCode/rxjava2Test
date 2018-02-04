@@ -24,6 +24,9 @@
         <activity android:name=".ui.activity.MyTestActivity" />
         <activity android:name=".ui.activity.RxCreateActivity" />
         <activity android:name=".ui.activity.RxZipActivity" />
+        <activity android:name=".ui.activity.RxMapActivity" />
+        <activity android:name=".ui.activity.RxFlatMapActivity" />
+        <activity android:name=".ui.activity.RxConcatMapActivity" />
     </application>
 
 </manifest>
