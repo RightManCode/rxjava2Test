@@ -1,7 +1,5 @@
 package com.xiamen.www.ui.activity
 
-import android.content.ContentValues
-import android.util.Log
 import com.rx2androidnetworking.Rx2AndroidNetworking
 import com.xiamen.www.bean.FoodListBean
 import com.xiamen.www.utils.CacheManager
@@ -51,20 +49,24 @@ class RxCaseConcatActivity : RxOperatorBaseActivity() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(object : Observer<FoodListBean> {
                     override fun onComplete() {
-                        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                     }
 
                     override fun onError(e: Throwable) {
-                        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                        rx_operators_text.append("onError: " + e.message + "\n")
                     }
 
                     override fun onSubscribe(d: Disposable) {
-                        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                     }
 
                     override fun onNext(t: FoodListBean) {
+                        if (isFromNet) {
+                            rx_operators_text.append("onNext: 网络获取数据，设置缓存\n")
+                            CacheManager.getInstance().foodListData = t
+                        }
+
+                        rx_operators_text.append("onNext: 读取数据成功，" + t.toString() + "\n")
                     }
                 })
     }
-    
+
 }

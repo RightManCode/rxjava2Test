@@ -49,6 +49,7 @@
         <activity android:name=".ui.activity.RxNetworkActivity" />
         <activity android:name=".ui.activity.RxCaseZipActivity" />
         <activity android:name=".ui.activity.RxCaseFlatMapActivity" />
+        <activity android:name=".ui.activity.RxCaseConcatActivity" />
     </application>
 
 </manifest>

@@ -2,10 +2,7 @@ package com.xiamen.www.ui.fragment
 
 import android.content.Intent
 import com.xiamen.www.bean.OperatorModel
-import com.xiamen.www.ui.activity.RxCaseFlatMapActivity
-import com.xiamen.www.ui.activity.RxCaseZipActivity
-import com.xiamen.www.ui.activity.RxNetSingleActivity
-import com.xiamen.www.ui.activity.RxNetworkActivity
+import com.xiamen.www.ui.activity.*
 
 /**
  * Created by admin on 2018/2/2.
@@ -51,6 +48,7 @@ class UseCasesFragment : CategoryBaseFragment() {
             1 -> startActivity(Intent(context, RxNetworkActivity::class.java))
             2 -> startActivity(Intent(context, RxCaseZipActivity::class.java))
             3 -> startActivity(Intent(context, RxCaseFlatMapActivity::class.java))
+            4 -> startActivity(Intent(context, RxCaseConcatActivity::class.java))
         }
         //        switch (position) {
         //            case 0:
