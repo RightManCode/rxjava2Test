@@ -60,7 +60,9 @@ class OperatorsFragment : CategoryBaseFragment() {
             5 -> startActivity(Intent(context, RxDoOnNextActivity::class.java))
             6 -> startActivity(Intent(context, RxFilterActivity::class.java))
             7 -> startActivity(Intent(context, RxSkipActivity::class.java))
-            8->startActivity(Intent(context,RxTakeActivity::class.java))
+            8 -> startActivity(Intent(context, RxTakeActivity::class.java))
+            9 -> startActivity(Intent(context, RxTimerActivity::class.java))
+            10 -> startActivity(Intent(context, RxIntervalActivity::class.java))
         }
 //        switch(position) {
 //            case 0:

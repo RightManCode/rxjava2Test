@@ -31,6 +31,8 @@
         <activity android:name=".ui.activity.RxFilterActivity" />
         <activity android:name=".ui.activity.RxSkipActivity" />
         <activity android:name=".ui.activity.RxTakeActivity" />
+        <activity android:name=".ui.activity.RxTimerActivity" />
+        <activity android:name=".ui.activity.RxIntervalActivity" />
     </application>
 
 </manifest>
