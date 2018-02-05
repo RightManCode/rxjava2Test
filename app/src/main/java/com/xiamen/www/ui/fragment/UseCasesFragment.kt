@@ -2,6 +2,7 @@ package com.xiamen.www.ui.fragment
 
 import android.content.Intent
 import com.xiamen.www.bean.OperatorModel
+import com.xiamen.www.ui.activity.RxCaseFlatMapActivity
 import com.xiamen.www.ui.activity.RxCaseZipActivity
 import com.xiamen.www.ui.activity.RxNetSingleActivity
 import com.xiamen.www.ui.activity.RxNetworkActivity
@@ -49,6 +50,7 @@ class UseCasesFragment : CategoryBaseFragment() {
             0 -> startActivity(Intent(context, RxNetSingleActivity::class.java))
             1 -> startActivity(Intent(context, RxNetworkActivity::class.java))
             2 -> startActivity(Intent(context, RxCaseZipActivity::class.java))
+            3 -> startActivity(Intent(context, RxCaseFlatMapActivity::class.java))
         }
         //        switch (position) {
         //            case 0:

@@ -48,6 +48,7 @@
         <activity android:name=".ui.activity.RxNetSingleActivity" />
         <activity android:name=".ui.activity.RxNetworkActivity" />
         <activity android:name=".ui.activity.RxCaseZipActivity" />
+        <activity android:name=".ui.activity.RxCaseFlatMapActivity" />
     </application>
 
 </manifest>
