@@ -33,6 +33,12 @@
         <activity android:name=".ui.activity.RxTakeActivity" />
         <activity android:name=".ui.activity.RxTimerActivity" />
         <activity android:name=".ui.activity.RxIntervalActivity" />
+        <activity android:name=".ui.activity.RxJustActivity" />
+        <activity android:name=".ui.activity.RxSingleActivity" />
+        <activity android:name=".ui.activity.RxConcatActivity" />
+        <activity android:name=".ui.activity.RxDistinctActivity" />
+        <activity android:name=".ui.activity.RxBufferActivity" />
+        <activity android:name=".ui.activity.RxDebounceActivity" />
     </application>
 
 </manifest>

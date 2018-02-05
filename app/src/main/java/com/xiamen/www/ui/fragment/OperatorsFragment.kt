@@ -63,6 +63,12 @@ class OperatorsFragment : CategoryBaseFragment() {
             8 -> startActivity(Intent(context, RxTakeActivity::class.java))
             9 -> startActivity(Intent(context, RxTimerActivity::class.java))
             10 -> startActivity(Intent(context, RxIntervalActivity::class.java))
+            11 -> startActivity(Intent(context, RxJustActivity::class.java))
+            12 -> startActivity(Intent(context, RxSingleActivity::class.java))
+            13 -> startActivity(Intent(context, RxConcatActivity::class.java))
+            14 -> startActivity(Intent(context, RxDistinctActivity::class.java))
+            15 -> startActivity(Intent(context, RxBufferActivity::class.java))
+            16 -> startActivity(Intent(context, RxDebounceActivity::class.java))
         }
 //        switch(position) {
 //            case 0:

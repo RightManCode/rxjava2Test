@@ -23,7 +23,7 @@ class RxIntervalActivity : RxOperatorBaseActivity() {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe {
-                    rx_operators_text.append("interval :" + it + " at " + TimeUtil.getNowStrTime())
+                    rx_operators_text.append("interval :" + it + " at " + TimeUtil.getNowStrTime()+"\n")
                 }
     }
 

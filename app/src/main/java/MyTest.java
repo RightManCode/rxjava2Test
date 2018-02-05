@@ -38,11 +38,21 @@ public class MyTest {
                 return Observable.fromIterable(list).delay(delayTime, TimeUnit.MILLISECONDS);
             }
         }).observeOn(AndroidSchedulers.mainThread())
-        .subscribe(new Consumer<String>() {
-            @Override
-            public void accept(String s) throws Exception {
+                .subscribe(new Consumer<String>() {
+                    @Override
+                    public void accept(String s) throws Exception {
 
-            }
-        });
+                    }
+                });
+    }
+
+    private void inint1() {
+        Observable.concat(Observable.just(1, 2, 3), Observable.just(4, 5, 6))
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(Integer integer) throws Exception {
+
+                    }
+                });
     }
 }
