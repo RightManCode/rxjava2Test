@@ -9,6 +9,7 @@ import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.BiFunction;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 
@@ -46,7 +47,7 @@ public class MyTest {
                 });
     }
 
-    private void inint1() {
+    private void init1() {
         Observable.concat(Observable.just(1, 2, 3), Observable.just(4, 5, 6))
                 .subscribe(new Consumer<Integer>() {
                     @Override
@@ -54,5 +55,31 @@ public class MyTest {
 
                     }
                 });
+    }
+
+    private void init2() {
+        Observable.just(1, 2, 3)
+                .last(4)
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(Integer integer) throws Exception {
+
+                    }
+                });
+    }
+
+    private void init3() {
+        Observable.just(1, 2, 3, 4, 5)
+                .reduce(new BiFunction<Integer, Integer, Integer>() {
+                    @Override
+                    public Integer apply(Integer integer, Integer integer2) throws Exception {
+                        return integer + integer2;
+                    }
+                }).subscribe(new Consumer<Integer>() {
+            @Override
+            public void accept(Integer integer) throws Exception {
+
+            }
+        });
     }
 }

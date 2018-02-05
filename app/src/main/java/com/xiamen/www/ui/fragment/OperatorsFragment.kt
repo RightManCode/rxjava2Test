@@ -1,6 +1,7 @@
 package com.xiamen.www.ui.fragment
 
 import android.content.Intent
+import android.widget.Toast
 
 import com.xiamen.www.R
 import com.xiamen.www.bean.OperatorModel
@@ -69,92 +70,18 @@ class OperatorsFragment : CategoryBaseFragment() {
             14 -> startActivity(Intent(context, RxDistinctActivity::class.java))
             15 -> startActivity(Intent(context, RxBufferActivity::class.java))
             16 -> startActivity(Intent(context, RxDebounceActivity::class.java))
+            17 -> startActivity(Intent(context, RxDeferActivity::class.java))
+            18 -> startActivity(Intent(context, RxLastActivity::class.java))
+            19 -> startActivity(Intent(context, RxMergeActivity::class.java))
+            20 -> startActivity(Intent(context, RxReduceActivity::class.java))
+            21 -> startActivity(Intent(context, RxScanActivity::class.java))
+            22 -> Toast.makeText(context, "敬请期待！", Toast.LENGTH_SHORT).show()
+            23 -> Toast.makeText(context, "敬请期待！", Toast.LENGTH_SHORT).show()
+            24 -> Toast.makeText(context, "敬请期待！", Toast.LENGTH_SHORT).show()
+            25 -> Toast.makeText(context, "敬请期待！", Toast.LENGTH_SHORT).show()
+            26 -> Toast.makeText(context, "敬请期待！", Toast.LENGTH_SHORT).show()
+            27 -> startActivity(Intent(context, RxFlowableActivity::class.java))
+
         }
-//        switch(position) {
-//            case 0:
-//            startActivity(new Intent (getActivity(), RxCreateActivity.class));
-//            break;
-//            case 1:
-//            startActivity(new Intent (getActivity(), RxZipActivity.class));
-//            break;
-//            case 2:
-//            startActivity(new Intent (getActivity(), RxMapActivity.class));
-//            break;
-//            case 3:
-//            startActivity(new Intent (getActivity(), RxFlatMapActivity.class));
-//            break;
-//            case 4:
-//            startActivity(new Intent (getActivity(), RxConcatMapActivity.class));
-//            break;
-//            case 5:
-//            startActivity(new Intent (getActivity(), RxDoOnNextActivity.class));
-//            break;
-//            case 6:
-//            startActivity(new Intent (getActivity(), RxFilterActivity.class));
-//            break;
-//            case 7:
-//            startActivity(new Intent (getActivity(), RxSkipActivity.class));
-//            break;
-//            case 8:
-//            startActivity(new Intent (getActivity(), RxTakeActivity.class));
-//            break;
-//            case 9:
-//            startActivity(new Intent (getActivity(), RxTimerActivity.class));
-//            break;
-//            case 10:
-//            startActivity(new Intent (getActivity(), RxIntervalActivity.class));
-//            break;
-//            case 11:
-//            startActivity(new Intent (getActivity(), RxJustActivity.class));
-//            break;
-//            case 12:
-//            startActivity(new Intent (getActivity(), RxSingleActivity.class));
-//            break;
-//            case 13:
-//            startActivity(new Intent (getActivity(), RxConcatActivity.class));
-//            break;
-//            case 14:
-//            startActivity(new Intent (getActivity(), RxDistinctActivity.class));
-//            break;
-//            case 15:
-//            startActivity(new Intent (getActivity(), RxBufferActivity.class));
-//            break;
-//            case 16:
-//            startActivity(new Intent (getActivity(), RxDebounceActivity.class));
-//            break;
-//            case 17:
-//            startActivity(new Intent (getActivity(), RxDeferActivity.class));
-//            break;
-//            case 18:
-//            startActivity(new Intent (getActivity(), RxLastActivity.class));
-//            break;
-//            case 19:
-//            startActivity(new Intent (getActivity(), RxMergeActivity.class));
-//            break;
-//            case 20:
-//            startActivity(new Intent (getActivity(), RxReduceActivity.class));
-//            break;
-//            case 21:
-//            startActivity(new Intent (getActivity(), RxScanActivity.class));
-//            break;
-//            case 22:
-//            startActivity(new Intent (getActivity(), RxWindowActivity.class));
-//            break;
-//            case 23:
-//            startActivity(new Intent (getActivity(), RxPublishSubjectActivity.class));
-//            break;
-//            case 24:
-//            startActivity(new Intent (getActivity(), RxAsyncSubjectActivity.class));
-//            break;
-//            case 25:
-//            startActivity(new Intent (getActivity(), RxBehaviorSubjectActivity.class));
-//            break;
-//            case 26:
-//            startActivity(new Intent (getActivity(), RxCompletableActivity.class));
-//            break;
-//            case 27:
-//            startActivity(new Intent (getActivity(), RxFlowableActivity.class));
-//            break;
-//        }
     }
 }

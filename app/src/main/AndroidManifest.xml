@@ -39,6 +39,12 @@
         <activity android:name=".ui.activity.RxDistinctActivity" />
         <activity android:name=".ui.activity.RxBufferActivity" />
         <activity android:name=".ui.activity.RxDebounceActivity" />
+        <activity android:name=".ui.activity.RxDeferActivity" />
+        <activity android:name=".ui.activity.RxLastActivity" />
+        <activity android:name=".ui.activity.RxMergeActivity" />
+        <activity android:name=".ui.activity.RxReduceActivity" />
+        <activity android:name=".ui.activity.RxScanActivity" />
+        <activity android:name=".ui.activity.RxFlowableActivity" />
     </application>
 
 </manifest>

@@ -20,11 +20,11 @@ class RxSingleActivity : RxOperatorBaseActivity() {
         Single.just(Random().nextInt())
                 .subscribe(object : SingleObserver<Int> {
                     override fun onError(e: Throwable) {
-                        rx_operators_text.append("single onError accept:" + e.message + "\n")
+                        rx_operators_text.append("single onError:" + e.message + "\n")
                     }
 
                     override fun onSuccess(t: Int) {
-                        rx_operators_text.append("single onSuccess accept:" + t + "\n")
+                        rx_operators_text.append("single onSuccess:" + t + "\n")
                     }
 
                     override fun onSubscribe(d: Disposable) {
