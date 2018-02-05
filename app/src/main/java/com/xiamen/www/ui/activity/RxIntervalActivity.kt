@@ -23,12 +23,12 @@ class RxIntervalActivity : RxOperatorBaseActivity() {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe {
-                    rx_operators_text.append("interval :" + it + " at " + TimeUtil.getNowStrTime()+"\n")
+                    rx_operators_text.append("interval :" + it + " at " + TimeUtil.getNowStrTime() + "\n")
                 }
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        mDisposable!!.dispose()
+        mDisposable?.dispose()
     }
 }

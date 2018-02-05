@@ -49,9 +49,7 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
             lp2.setMargins(0, ScreenUtil.getStatusBarHeight(this) / 3, 0, 0)
             iv_back.layoutParams = lp2
         }
-        if (toolbar != null) {
-            title_text.text = getSubTitle()
-        }
+        title_text?.text = getSubTitle()
         if (isShowBack()) {
             back()
         }
