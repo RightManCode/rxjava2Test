@@ -1,10 +1,10 @@
 package com.xiamen.www.ui.fragment
 
 import android.content.Intent
-
 import com.xiamen.www.bean.OperatorModel
-
-import java.util.ArrayList
+import com.xiamen.www.ui.activity.RxCaseZipActivity
+import com.xiamen.www.ui.activity.RxNetSingleActivity
+import com.xiamen.www.ui.activity.RxNetworkActivity
 
 /**
  * Created by admin on 2018/2/2.
@@ -45,9 +45,14 @@ class UseCasesFragment : CategoryBaseFragment() {
 
 
     override fun itemClick(position: Int) {
+        when (position) {
+            0 -> startActivity(Intent(context, RxNetSingleActivity::class.java))
+            1 -> startActivity(Intent(context, RxNetworkActivity::class.java))
+            2 -> startActivity(Intent(context, RxCaseZipActivity::class.java))
+        }
         //        switch (position) {
         //            case 0:
-        //                startActivity(new Intent(getActivity(), RxNetSingleActivity.class));
+        //                startActivity(new Intent(getActivity(), RxNetSingleActivity1.class));
         //                break;
         //            case 1:
         //                startActivity(new Intent(getActivity(), RxNetworkActivity.class));

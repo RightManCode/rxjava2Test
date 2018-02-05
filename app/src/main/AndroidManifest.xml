@@ -45,6 +45,9 @@
         <activity android:name=".ui.activity.RxReduceActivity" />
         <activity android:name=".ui.activity.RxScanActivity" />
         <activity android:name=".ui.activity.RxFlowableActivity" />
+        <activity android:name=".ui.activity.RxNetSingleActivity" />
+        <activity android:name=".ui.activity.RxNetworkActivity" />
+        <activity android:name=".ui.activity.RxCaseZipActivity" />
     </application>
 
 </manifest>
