@@ -56,6 +56,8 @@ dependencies {
     //网络请求库：Fast Android NetWorking
     compile 'com.amitshekhar.android:rx2-android-networking:1.0.0'
 
+    //防止程序崩溃
+    compile  'com.wanjian:cockroach:0.0.5'
 
 
 }

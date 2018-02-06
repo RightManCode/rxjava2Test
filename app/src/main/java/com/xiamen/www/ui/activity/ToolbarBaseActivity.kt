@@ -39,10 +39,11 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
 
     private fun initToolbar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            toolbar.layoutParams.height = ScreenUtil.dip2px(this, 60F)
-            val lp = FrameLayout.LayoutParams(title_text.layoutParams)
-            lp.gravity = Gravity.CENTER_HORIZONTAL
-            lp.setMargins(0, ScreenUtil.getStatusBarHeight(this), 0, 0)
+            toolbar.layoutParams.height = ScreenUtil.dip2px(this, 80F)
+
+
+            val lp = LinearLayout.LayoutParams(title_text.layoutParams)
+            lp.setMargins(0, ScreenUtil.getStatusBarHeight(this)/3, 0, 0)
             title_text.layoutParams = lp
 
             val lp2 = LinearLayout.LayoutParams(iv_back.layoutParams)

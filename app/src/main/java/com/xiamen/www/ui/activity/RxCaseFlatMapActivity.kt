@@ -3,7 +3,6 @@ package com.xiamen.www.ui.activity
 import com.rx2androidnetworking.Rx2AndroidNetworking
 import com.xiamen.www.bean.FoodDetailBean
 import com.xiamen.www.bean.FoodListBean
-import io.reactivex.Observable
 import io.reactivex.ObservableSource
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
