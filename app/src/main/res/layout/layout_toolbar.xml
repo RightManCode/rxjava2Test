@@ -39,7 +39,7 @@
             android:maxLines="1"
             android:text="bing"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
 

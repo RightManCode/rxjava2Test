@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_rx_operator_base.*
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
-import kotlin.CharSequence
 
 /**
  * Created by admin on 2018/2/5.

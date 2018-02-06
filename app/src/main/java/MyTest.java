@@ -1,5 +1,3 @@
-import android.net.Network;
-import android.support.annotation.MainThread;
 import android.util.Log;
 
 import com.rx2androidnetworking.Rx2AndroidNetworking;

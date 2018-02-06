@@ -1,7 +1,5 @@
 package com.xiamen.www.ui.activity
 
-import io.reactivex.Observable
-import io.reactivex.Observer
 import io.reactivex.Single
 import io.reactivex.SingleObserver
 import io.reactivex.disposables.Disposable

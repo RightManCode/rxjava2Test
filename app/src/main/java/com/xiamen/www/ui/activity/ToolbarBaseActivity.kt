@@ -3,9 +3,7 @@ package com.xiamen.www.ui.activity
 import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.Gravity
 import android.view.View
-import android.widget.FrameLayout
 import android.widget.LinearLayout
 import com.xiamen.www.utils.ScreenUtil
 import com.xiamen.www.utils.StatusBarUtl
@@ -39,7 +37,7 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
 
     private fun initToolbar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            toolbar.layoutParams.height = ScreenUtil.dip2px(this, 80F)
+            toolbar.layoutParams.height = ScreenUtil.dip2px(this, 70F)
 
 
             val lp = LinearLayout.LayoutParams(title_text.layoutParams)

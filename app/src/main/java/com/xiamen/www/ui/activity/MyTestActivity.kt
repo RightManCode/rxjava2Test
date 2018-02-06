@@ -8,12 +8,12 @@ import android.widget.Toast
 import com.jakewharton.rxbinding2.view.RxView
 import com.jakewharton.rxbinding2.widget.RxTextView
 import com.xiamen.www.R
+import com.xiamen.www.utils.BaseDisposableObserver
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 import io.reactivex.functions.BiFunction
 import kotlinx.android.synthetic.main.activity_main.*
-import com.xiamen.www.utils.BaseDisposableObserver
 import java.util.concurrent.TimeUnit
 
 /**

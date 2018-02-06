@@ -1,11 +1,8 @@
 package com.xiamen.www.ui.adapter
 
-import android.view.View
-
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.xiamen.www.R
-import com.xiamen.www.R.id.item_title
 import com.xiamen.www.bean.OperatorModel
 
 /**

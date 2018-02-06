@@ -2,12 +2,9 @@ package com.xiamen.www.ui.fragment
 
 import android.content.Intent
 import android.widget.Toast
-
 import com.xiamen.www.R
 import com.xiamen.www.bean.OperatorModel
 import com.xiamen.www.ui.activity.*
-
-import java.util.ArrayList
 
 /**
  * Created by admin on 2018/2/1.

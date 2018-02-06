@@ -49,32 +49,9 @@ class UseCasesFragment : CategoryBaseFragment() {
             2 -> startActivity(Intent(context, RxCaseZipActivity::class.java))
             3 -> startActivity(Intent(context, RxCaseFlatMapActivity::class.java))
             4 -> startActivity(Intent(context, RxCaseConcatActivity::class.java))
+            5 -> startActivity(Intent(context, RxCaseDebounceActivity::class.java))
+            6 -> startActivity(Intent(context, RxCaseIntervalActivity::class.java))
+            7 -> startActivity(Intent(context, RxThreadActivity::class.java))
         }
-        //        switch (position) {
-        //            case 0:
-        //                startActivity(new Intent(getActivity(), RxNetSingleActivity1.class));
-        //                break;
-        //            case 1:
-        //                startActivity(new Intent(getActivity(), RxNetworkActivity.class));
-        //                break;
-        //            case 2:
-        //                startActivity(new Intent(getActivity(), RxCaseZipActivity.class));
-        //                break;
-        //            case 3:
-        //                startActivity(new Intent(getActivity(), RxCaseFlatMapActivity.class));
-        //                break;
-        //            case 4:
-        //                startActivity(new Intent(getActivity(), RxCaseConcatActivity.class));
-        //                break;
-        //            case 5:
-        //                startActivity(new Intent(getActivity(), RxCaseDebounceActivity.class));
-        //                break;
-        //            case 6:
-        //                startActivity(new Intent(getActivity(), RxCaseIntervalActivity.class));
-        //                break;
-        //            case 7:
-        //                startActivity(new Intent(getActivity(), RxThreadActivity.class));
-        //                break;
-        //        }
     }
 }
