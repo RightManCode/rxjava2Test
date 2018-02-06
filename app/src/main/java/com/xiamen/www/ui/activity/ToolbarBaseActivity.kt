@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.LinearLayout
 import com.xiamen.www.utils.ScreenUtil
 import com.xiamen.www.utils.StatusBarUtl
-import kotlinx.android.synthetic.main.activity_rx_operator_base.*
 import kotlinx.android.synthetic.main.layout_toolbar.*
 
 /**
@@ -20,6 +19,7 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         StatusBarUtl.fullScreen(this)
+        initPermissions()
         if (getContentViewLayoutID() != 0) {
             setContentView(getContentViewLayoutID())
             initToolbar()
@@ -27,11 +27,8 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
         }
     }
 
-    private fun initDoSomething() {
-        rx_operators_btn.setOnClickListener {
-            rx_operators_text.append("\n")
-            doSomething()
-        }
+    private fun initPermissions() {
+
     }
 
 
@@ -64,6 +61,6 @@ abstract class ToolbarBaseActivity : AppCompatActivity() {
     }
 
     abstract fun getSubTitle(): CharSequence?
-    abstract fun doSomething()
+    abstract fun initDoSomething()
 
 }
