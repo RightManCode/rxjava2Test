@@ -17,7 +17,11 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".ui.activity.MyTestActivity" />
@@ -53,13 +57,7 @@
         <activity android:name=".ui.activity.RxCaseIntervalActivity" />
         <activity android:name=".ui.activity.RxThreadActivity" />
         <activity android:name=".ui.activity.DetailsHtmlPageActivity" />
-        <activity android:name=".ui.activity.ViewPagerActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ui.activity.ViewPagerActivity" />
     </application>
 
 </manifest>
