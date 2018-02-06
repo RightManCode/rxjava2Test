@@ -59,5 +59,9 @@ dependencies {
     //防止程序崩溃
     compile  'com.wanjian:cockroach:0.0.5'
 
+    //引导页
+    implementation 'com.android.support:support-v4:2.2.4'
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+
 
 }
