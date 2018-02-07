@@ -1,4 +1,4 @@
-package com.xiamen.www.ui.activity
+package com.xiamen.www.base
 
 import android.os.Build
 import android.os.Bundle

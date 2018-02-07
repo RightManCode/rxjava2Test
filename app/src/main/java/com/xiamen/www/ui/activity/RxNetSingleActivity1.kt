@@ -1,6 +1,7 @@
 package com.xiamen.www.ui.activity
 
 import com.google.gson.Gson
+import com.xiamen.www.base.RxOperatorBaseActivity
 import com.xiamen.www.bean.MobileAddressBean
 import io.reactivex.Observable
 import io.reactivex.ObservableOnSubscribe

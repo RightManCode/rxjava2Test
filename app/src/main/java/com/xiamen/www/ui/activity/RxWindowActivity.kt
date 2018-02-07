@@ -1,5 +1,7 @@
 package com.xiamen.www.ui.activity
 
+import com.xiamen.www.base.RxOperatorBaseActivity
+
 /**
  * Created by admin on 2018/2/5.
  */

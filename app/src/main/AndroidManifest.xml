@@ -56,7 +56,7 @@
         <activity android:name=".ui.activity.RxCaseDebounceActivity" />
         <activity android:name=".ui.activity.RxCaseIntervalActivity" />
         <activity android:name=".ui.activity.RxThreadActivity" />
-        <activity android:name=".ui.activity.DetailsHtmlPageActivity" />
+        <activity android:name=".base.DetailsHtmlPageActivity" />
         <activity android:name=".ui.activity.ViewPagerActivity" />
     </application>
 

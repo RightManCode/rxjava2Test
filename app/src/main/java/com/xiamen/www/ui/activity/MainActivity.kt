@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.jakewharton.rxbinding2.view.RxView
 import com.xiamen.www.R
+import com.xiamen.www.base.DetailsHtmlPageActivity
 import com.xiamen.www.ui.adapter.BaseViewPagerAdapter
 import com.xiamen.www.ui.fragment.OperatorsFragment
 import com.xiamen.www.ui.fragment.UseCasesFragment

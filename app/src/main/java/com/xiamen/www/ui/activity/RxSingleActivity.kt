@@ -1,5 +1,6 @@
 package com.xiamen.www.ui.activity
 
+import com.xiamen.www.base.RxOperatorBaseActivity
 import io.reactivex.Single
 import io.reactivex.SingleObserver
 import io.reactivex.disposables.Disposable

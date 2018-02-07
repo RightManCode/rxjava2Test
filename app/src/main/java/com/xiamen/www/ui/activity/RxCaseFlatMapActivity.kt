@@ -1,6 +1,7 @@
 package com.xiamen.www.ui.activity
 
 import com.rx2androidnetworking.Rx2AndroidNetworking
+import com.xiamen.www.base.RxOperatorBaseActivity
 import com.xiamen.www.bean.FoodDetailBean
 import com.xiamen.www.bean.FoodListBean
 import io.reactivex.ObservableSource

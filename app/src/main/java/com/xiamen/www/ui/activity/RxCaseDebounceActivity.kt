@@ -2,6 +2,7 @@ package com.xiamen.www.ui.activity
 
 import com.jakewharton.rxbinding2.view.RxView
 import com.rx2androidnetworking.Rx2AndroidNetworking
+import com.xiamen.www.base.RxOperatorBaseActivity
 import com.xiamen.www.bean.FoodListBean
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers

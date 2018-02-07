@@ -1,4 +1,4 @@
-package com.xiamen.www.ui.activity;
+package com.xiamen.www.base;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -31,6 +31,7 @@ import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.DownloadProgressListener;
 import com.rx2androidnetworking.Rx2AndroidNetworking;
 import com.xiamen.www.R;
+import com.xiamen.www.base.ToolbarBaseActivity;
 
 import org.jetbrains.annotations.Nullable;
 

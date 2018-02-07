@@ -1,5 +1,6 @@
 package com.xiamen.www.ui.activity
 
+import com.xiamen.www.base.RxOperatorBaseActivity
 import com.xiamen.www.utils.TimeUtil
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers

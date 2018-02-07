@@ -1,6 +1,7 @@
 package com.xiamen.www.ui.activity
 
 import android.util.Log
+import com.xiamen.www.base.RxOperatorBaseActivity
 import io.reactivex.Observable
 import io.reactivex.functions.BiFunction
 import kotlinx.android.synthetic.main.activity_rx_operator_base.*

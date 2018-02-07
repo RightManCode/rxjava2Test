@@ -1,6 +1,7 @@
-package com.xiamen.www.ui.activity
+package com.xiamen.www.base
 
 import com.xiamen.www.R
+import com.xiamen.www.base.ToolbarBaseActivity
 import kotlinx.android.synthetic.main.activity_rx_operator_base.*
 
 /**

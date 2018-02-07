@@ -1,5 +1,6 @@
 package com.xiamen.www.ui.activity
 
+import com.xiamen.www.base.RxOperatorBaseActivity
 import io.reactivex.Observable
 import io.reactivex.functions.Consumer
 import kotlinx.android.synthetic.main.activity_rx_operator_base.*
