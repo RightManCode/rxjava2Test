@@ -63,5 +63,9 @@ dependencies {
     implementation 'com.android.support:support-v4:2.2.4'
     implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
 
+    //6.0手机权限
+    compile 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.0.4'
+
 
 }

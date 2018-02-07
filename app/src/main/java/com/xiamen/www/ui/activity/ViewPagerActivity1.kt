@@ -1,6 +1,8 @@
 package com.xiamen.www.ui.activity
 
+import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.v4.view.PagerAdapter
 import android.support.v7.app.AppCompatActivity
 import com.xiamen.www.R
@@ -13,9 +15,10 @@ import kotlinx.android.synthetic.main.activity_view_pager.*
  * Created by admin on 2018/2/7.
  */
 class ViewPagerActivity1 : AppCompatActivity() {
-    lateinit var pagerAdapter: PagerAdapter
+    private lateinit var pagerAdapter: PagerAdapter
     private var imgList: MutableList<View>? = null
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_pager)

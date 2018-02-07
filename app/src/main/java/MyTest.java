@@ -1,3 +1,5 @@
+import android.Manifest;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.rx2androidnetworking.Rx2AndroidNetworking;
@@ -23,14 +25,17 @@ import io.reactivex.functions.BiFunction;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
+import permissions.dispatcher.NeedsPermission;
+import permissions.dispatcher.OnPermissionDenied;
+import permissions.dispatcher.RuntimePermissions;
 
 import static android.content.ContentValues.TAG;
 
 /**
  * Created by admin on 2018/2/4.
  */
+public class MyTest extends AppCompatActivity {
 
-public class MyTest {
     public void init() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
@@ -60,7 +65,7 @@ public class MyTest {
                 });
     }
 
-    private void init1() {
+    void init1() {
         Observable.concat(Observable.just(1, 2, 3), Observable.just(4, 5, 6))
                 .subscribe(new Consumer<Integer>() {
                     @Override
@@ -70,7 +75,7 @@ public class MyTest {
                 });
     }
 
-    private void init2() {
+    void init2() {
         Observable.just(1, 2, 3)
                 .last(4)
                 .subscribe(new Consumer<Integer>() {
@@ -123,18 +128,20 @@ public class MyTest {
                     }
                 });
     }
+
     private boolean isFromNet = false;
+
     public void init5() {
         Observable<FoodListBean> cache = Observable.create(new ObservableOnSubscribe<FoodListBean>() {
             @Override
             public void subscribe(@NonNull ObservableEmitter<FoodListBean> e) throws Exception {
-                Log.e(TAG, "create当前线程:"+Thread.currentThread().getName() );
+                Log.e(TAG, "create当前线程:" + Thread.currentThread().getName());
                 FoodListBean data = CacheManager.getInstance().getFoodListData();
 
                 // 在操作符 concat 中，只有调用 onComplete 之后才会执行下一个 Observable
-                if (data != null){ // 如果缓存数据不为空，则直接读取缓存数据，而不读取网络数据
+                if (data != null) { // 如果缓存数据不为空，则直接读取缓存数据，而不读取网络数据
                     isFromNet = false;
-                    Log.e(TAG, "\nsubscribe: 读取缓存数据:" );
+                    Log.e(TAG, "\nsubscribe: 读取缓存数据:");
 ////                    runOnUiThread(new Runnable() {
 ////                        @Override
 ////                        public void run() {
@@ -143,7 +150,7 @@ public class MyTest {
 //                    });
 
                     e.onNext(data);
-                }else {
+                } else {
                     isFromNet = true;
 //                    runOnUiThread(new Runnable() {
 //                        @Override
@@ -151,7 +158,7 @@ public class MyTest {
 //                            mRxOperatorsText.append("\nsubscribe: 读取网络数据:\n");
 //                        }
 //                    });
-                    Log.e(TAG, "\nsubscribe: 读取网络数据:" );
+                    Log.e(TAG, "\nsubscribe: 读取网络数据:");
                     e.onComplete();
                 }
 
@@ -160,14 +167,14 @@ public class MyTest {
         });
 
         Observable<FoodListBean> network = Rx2AndroidNetworking.get("http://www.tngou.net/api/food/list")
-                .addQueryParameter("rows",10+"")
+                .addQueryParameter("rows", 10 + "")
                 .build()
                 .getObjectObservable(FoodListBean.class);
 
 
         // 两个 Observable 的泛型应当保持一致
 
-        Observable.concat(cache,network)
+        Observable.concat(cache, network)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<FoodListBean>() {
