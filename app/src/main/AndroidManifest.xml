@@ -58,6 +58,7 @@
         <activity android:name=".ui.activity.RxThreadActivity" />
         <activity android:name=".base.DetailsHtmlPageActivity" />
         <activity android:name=".ui.activity.ViewPagerActivity" />
+        <activity android:name=".ui.activity.ViewPagerActivity1" />
     </application>
 
 </manifest>
